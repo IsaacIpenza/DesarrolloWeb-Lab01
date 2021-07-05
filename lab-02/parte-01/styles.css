@@ -1,0 +1,126 @@
+* {
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #6bc6e2;
+}
+
+main{
+    padding: 25px;
+}
+
+header{
+    background-color: #add8e6;
+    padding: 30px;   
+    text-align: center; 
+}
+
+#headText{
+    float: left;    
+    margin: 10px;
+}
+
+h1{
+    font-size: 40px;
+    text-decoration-line: underline;
+    text-decoration-style:double;
+    text-decoration-color:#5f9ea0 ;
+}
+
+address{
+    font-size: 17px;
+}
+
+img{
+    border-style: solid;
+    border-width: 10px;
+    border-color: #6bc6e2;
+    margin: 10px;
+}
+
+nav{
+    border-style: dashed;
+    border-color: #20b2aa;
+    text-align: center;
+    margin: 25px;
+}
+
+#navLinks li{
+    font-size: 20px;
+    display: inline-block;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 10px;
+}
+
+#navLinkSelected{
+    font-weight: bold;
+    border-style: double;
+    border-color: #6bc6e2;
+    background-color: #20b2aa;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+section{
+    border-style: solid;
+    border-color: #801919;
+    margin-bottom: 15px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+h2{
+    font-size: 35px;
+    padding-left: 60px;
+    background-color:#801919;
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: 10px;    
+}
+
+h3{
+    font-size: 25px;
+    text-decoration: underline dashed #5f9ea0;
+    padding-left: 15px;
+    margin: 10px;
+}
+
+h4{
+    font-size: 20px;
+    font-weight: bolder;
+    padding-left: 40px;
+    margin: 2px;
+}
+
+p{
+    font-size: 18px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 12px;
+}
+
+section li{
+    font-size: 18px;
+}
+
+span{
+    font-weight: bolder;
+    font-size: 17px;
+    margin: 5px;
+}
+
+footer{
+    font-style: italic;
+    text-align: center;
+    background-color: #20b2aa;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    width: 100%;
+}
+
+.clearfix{
+    display:flow-root;
+}
