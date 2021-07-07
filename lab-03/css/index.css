@@ -12,3 +12,70 @@ body {
   width: 50px;
 }
 
+/* Media Query for Mobile Devices */ 
+@media (max-width: 767px) { 
+  body { 
+    background-color: white; 
+  } 
+
+  .logo{
+    display: flex;
+    justify-content: center;
+  }
+
+  h1{
+    text-align: center;
+  }
+
+  nav{
+    background-color: gray;
+    margin-left: 1%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+  }
+
+  .hamburger{
+    display: flex;
+    color: white;
+    justify-content: flex-end;
+  }
+
+  .menu{
+    display: none;
+  }
+
+  main{
+    margin: 1.5px;
+  }
+
+  .product{
+    text-align: center;
+    border-style: solid;
+    border-width: thin;
+  }
+
+  .social{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .social_icon{
+    list-style: none;
+  }
+
+} 
+                
+/* Media Query for Tablets Ipads portrait mode */ 
+ @media (min-width: 768px) and (max-width: 1024px){ 
+  body { 
+    background-color: blue; 
+  } 
+} 
+        
+/* Media Query for Laptops and Desktops */ 
+@media (min-width: 1025px){ 
+  body { 
+    background-color: green; 
+  } 
+} 
