@@ -25,27 +25,29 @@ app.get("/tables", (req, res) => {
 });
 
 // Display tables and waiting list
-app.get("/api/tables", (req,res) => {
+app.get("/api/tables", (req, res) => {
     return res.json(tables);
 });
 
-app.get("/api/waitlist", (req,res) => {
+app.get("/api/waitlist", (req, res) => {
     return res.json(waitingList);
 });
 
-// Add tableapi/t
-app.post("/ables", (req,res) => {
+// Add table
+app.post("/api/tables", (req, res) => {
     
     var newTable = req.body;
     console.log(newTable);
 
     if(tables.length < 5 ){
         tables.push(newTable);
+        res.send(true)
     } else {
         waitingList.push(newTable);
+        res.send(false)
     }
 
-    res.json(newTable);
+    // res.json(newTable);
 });
 
 // Delete all tables

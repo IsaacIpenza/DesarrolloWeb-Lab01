@@ -97,9 +97,11 @@ $("#add-button").on("click", e => {
 
   $.post("/api/tables", newTable)
   .then(data => {
-    console.log(data);
-    alert("Adding Table!!!")
-
+    if(data){
+      alert("Adding Table!!!")
+    } else {
+      alert("You are in the Waiting List")
+    }
     $("#reserve-name").val("");
     $("#reserve-email").val("");
     $("#reserve-unique-id").val("");
